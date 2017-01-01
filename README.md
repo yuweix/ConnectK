@@ -75,32 +75,5 @@ There are getters available for the rules and dimensions as well as getters for 
 	
 Although most of the member variables are public, it is recommended to use the getters (e.g. getSpace(int x, int y) instead of directly accessing 'pieces[x][y]'. 
 
-#####C++ AIs:
-	ConnectK.cpp has main function to get a current state from the java shell. Please implement your AI agent in AIShell::makeMove(). AIShell::gameState has the current game state as array of integers. 0, 1 and -1 represent empty, AI piece and human piece respectively. Note that these integer values are different from the Java version.
 
-Then compile your code and make an executable file (for example on Windows, myAI.exe). On Linux, open a terminal and type
-```shell
-g++ ConnectK.cpp Move.cpp AIShell.cpp -o myAI
-```
 
-Then you can test your AI agent by running ConnectK.jar with the following command.
-On Windows:
-```
-java -jar ConnectK.jar cpp:myAI.exe
-```
-On Linux:
-```
-java -jar ConnectK.jar cpp:myAI
-```
-
-#####Python AIs:
-Python has it's own standalone shell located in [ConnectKSource_python](https://github.com/tolusalako/ConnectK/blob/FQ2016_STABLE/ConnectKSource_python/). The shell only supports python AIs at the moment. To run your python AIs in the java shell:
-
-1. Write your ai in the make_move() method in 'StudentAI.py'.
-2. Run with the following command 
-```
-java -jar ConnectK.jar py:StudentAI.py
-```
-		
-###B. Python Shell
-See [Python Readme](https://github.com/tolusalako/ConnectK/blob/FQ2016_STABLE/ConnectKSource_python/readme.md)
