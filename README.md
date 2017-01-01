@@ -1,27 +1,10 @@
 #ConnectK
 
 ##Project Description
-ConnectK is an enhanced version of Connect4 [the board game](https://en.wikipedia.org/wiki/Connect_Four). ConnectK's width (**w**), height (**h**), and **K** are all configurable. ConnectK is also more interesting as it supports 2 different gravity modes: **ON | OFF**. With gravity off, the pieces stay wherever they are placed. With gravity on, they fall till they meet another piece or hit the bottom. The purpose of the project is for students to write AIs to compete in a tournament against other students.
-
-###Language Support
-
-| Language | Shell (Supported AIs)  | AI    |
-|----------|:-------------------------------|:-----:|
-| Java 8     | **STABLE** (java, cpp, python) |  **YES**  |
-
-
-This means that you can __**write**__ your AIs in Java, Cpp, or Python, and you can __**run**__ any AI written in any of the 3 languages on the Java shell.
-
-On open lab, you can switch compiler versions using:
-```shell
-#For Java 8
-module load java/1.8.0_20
-#For Python 3
-module load python/3.5.1
-```
+ConnectK is an enhanced version of Connect4 [the board game](https://en.wikipedia.org/wiki/Connect_Four). ConnectK's width (**w**), height (**h**), and **K** are all configurable. ConnectK is also more interesting as it supports 2 different gravity modes: **ON | OFF**. With gravity off, the pieces stay wherever they are placed. With gravity on, they fall till they meet another piece or hit the bottom. 
 
 ##Getting Started
-###A. JAVA SHELL
+### JAVA SHELL
 ####1. Running ConnectK.jar:
 You can run it from the directory the file is in using the commandline/terminal with the command:
 ```shell
@@ -37,22 +20,6 @@ After starting up ConnectK, the game will default to a two player (human vs. hum
 Additionally, you can choose to import AI opponents. 3 AI opponents are provided for you in the `SampleAI` directory. Click Add AI and navigate to 'ConnectKSource_java/SampleAI/AverageAI/AverageAI.class'. Click open, and new game to start a game against the average AI. 
 
 >You can add multiple AIs and watch 2 of them play against eachother.
-
-####3. Writing an AI:
-#####JAVA AIs:
-######Preparation: 
-The following instructions will tell you how to begin writing an AI with eclipse. 
-
-1. Copy `ConnectK.jar` to `ConnectKSource_java/Libs`
-2. Open eclipse and create a new java project.
-3. Right click on the project in `Project Explorer` and click on `properties`.
-4. Go to `Java Build Path` > `Libraries` > `Add External Jars`.
-5. Select all the JAR files in the `Libs` folder and import them.
-6. Put `DummyAI.java` in the default package for the new project. This file will act as starter code to help write your own AI. Make sure you rename the file to `<YOUR TEAM NAME>AI.java`. 
-
-Now you can begin formulating your own AI. 
->Note the source of ConnectK.jar is provided for you as a convenience. Do NOT include it in your java project. 
-
 
 ######The template:
  An overloaded method and a constructor are provided. 
