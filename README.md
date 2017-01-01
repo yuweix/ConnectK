@@ -8,8 +8,7 @@ ConnectK is an enhanced version of Connect4 [the board game](https://en.wikipedi
 | Language | Shell (Supported AIs)  | AI    |
 |----------|:-------------------------------|:-----:|
 | Java 8     | **STABLE** (java, cpp, python) |  **YES**  |
-| CPP      | NONE   |  **YES**  |
-| Python 3   | *BUGGY* (python)  |  **YES**  |
+
 
 This means that you can __**write**__ your AIs in Java, Cpp, or Python, and you can __**run**__ any AI written in any of the 3 languages on the Java shell.
 
